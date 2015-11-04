@@ -1,0 +1,115 @@
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Source Sans Pro", Helvetica, sans-serif; }
+
+.app-header {
+  background-color: #240425;
+  color: white;
+  padding: .5rem; }
+
+.hammer-list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.hammer-item {
+  list-style: none;
+  height: 200px;
+  width: 200px;
+  -webkit-flex-basis: 200px;
+      -ms-flex-preferred-size: 200px;
+          flex-basis: 200px;
+  margin: 1rem;
+  background-image: cover;
+  border-radius: 50%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.hammer-name {
+  color: #7e52a1;
+  font-size: 1.5rem;
+  font-weight: 900;
+  width: 100%;
+  display: block;
+  padding: .25rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin: 0; }
+
+.primary-btn {
+  padding: .5rem 2rem;
+  color: #7e52a1;
+  border: 1px solid #7e52a1;
+  background-color: #f2f2f2;
+  font-size: 1rem;
+  border-radius: 40px;
+  cursor: pointer; }
+  .primary-btn:hover {
+    background-color: #7e52a1;
+    color: white; }
+
+.hammer-button {
+  padding: 2rem; }
+
+.hammer-name-field {
+  padding: .5rem 2rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+  border-radius: 2px;
+  border: 1px solid #240425;
+  color: #240425; }
+  .hammer-name-field::-webkit-input-placeholder {
+    color: #240425; }
+  .hammer-name-field::-moz-placeholder {
+    color: #240425; }
+  .hammer-name-field:-ms-input-placeholder {
+    color: #240425; }
+  .hammer-name-field::placeholder {
+    color: #240425; }
+  .hammer-name-field:focus {
+    outline: 1px solid #F5B90E; }

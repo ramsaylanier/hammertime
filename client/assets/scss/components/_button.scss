@@ -1,0 +1,35 @@
+.primary-btn{
+ padding: .5rem 2rem;
+ color: $primary;
+ border: 1px solid $primary;
+ background-color: darken(white, 5%);
+ font-size: 1rem;
+ border-radius: 40px;
+ cursor: pointer;
+
+ &:hover{
+  background-color: $primary;
+  color: white;
+ }
+}
+
+.hammer-button{
+ padding: 2rem;
+}
+
+.hammer-name-field{
+ padding: .5rem 2rem;
+ font-size: 1rem;
+ margin-right: 1rem;
+ border-radius: 2px;
+ border: 1px solid $dark;
+ color: $dark;
+
+ &::placeholder{
+  color: $dark;
+ }
+
+ &:focus{
+  outline: 1px solid $secondary;
+ }
+}
