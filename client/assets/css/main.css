@@ -52,6 +52,11 @@ body {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
+  @media only screen and (max-width: 568px) {
+    .hammer-list {
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .hammer-item {
   list-style: none;
@@ -69,6 +74,16 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media only screen and (max-width: 568px) {
+    .hammer-item {
+      height: 150px;
+      width: 150px;
+      -webkit-flex-basis: 150px;
+          -ms-flex-preferred-size: 150px;
+              flex-basis: 150px;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center; } }
 
 .hammer-name {
   color: #7e52a1;
@@ -80,6 +95,9 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   margin: 0; }
+  @media only screen and (max-width: 568px) {
+    .hammer-name {
+      font-size: .9rem; } }
 
 .primary-btn {
   padding: .5rem 2rem;

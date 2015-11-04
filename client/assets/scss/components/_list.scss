@@ -1,8 +1,14 @@
+$mobileSize: 150px;
+
 .hammer-list{
  display: flex;
  list-style: none;
  justify-content: flex-start;
  flex-wrap: wrap;
+
+ @media #{$mobile}{
+   justify-content: center;
+ }
 }
 
 .hammer-item{
@@ -15,6 +21,13 @@
  border-radius: 50%;
  display: flex;
  align-items: center;
+
+ @media #{$mobile}{
+   height: $mobileSize;
+   width: $mobileSize;
+   flex-basis: $mobileSize;
+   align-self: center;
+ }
 }
 
 .hammer-name{
@@ -27,4 +40,8 @@
  background-color: fade-out(white, .2);
  text-align: center;
  margin: 0;
+
+ @media #{$mobile}{
+   font-size: .9rem;
+ }
 }
