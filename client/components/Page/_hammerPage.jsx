@@ -13,7 +13,11 @@ HammerPage = React.createClass({
 
 	render(){
 		if (this.data.loading){
-			return <p>...loading</p>
+			return (
+				<div className="loading">
+					<img src="/images/hammertime.gif"/>
+				</div>
+			)
 		} else{
 		 return (
 			 <Page>

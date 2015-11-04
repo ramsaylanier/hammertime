@@ -36,6 +36,14 @@ table {
 body {
   font-family: "Source Sans Pro", Helvetica, sans-serif; }
 
+.loading {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center; }
+
 .app-header {
   background-color: #240425;
   color: white;
